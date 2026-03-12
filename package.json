@@ -1,0 +1,25 @@
+{
+  "name": "ceplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "login": "node test/loginsession.js",
+    "test": "npx playwright test",
+    "test:tc001": "npx playwright test test/check-engine-page/TC-001-page_loads.spec.js",
+    "report": "npx playwright show-report",
+    "test:gherkin": "cucumber-js --require ./steps/**/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.6.0",
+    "@playwright/test": "^1.57.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "xlsx": "^0.18.5"
+  }
+}

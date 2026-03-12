@@ -10,10 +10,10 @@ module.exports = {
   ],
 
   use: {
-    channel: 'chrome',
+    channel: 'chromium',
     trace: 'on-first-retry',     
     video: 'retain-on-failure',  
-    headless: false,
+    //headless: true,
     ignoreHTTPSErrors: true,
     storageState: path.resolve(__dirname, 'test/storageState.json'),
     baseURL: 'https://hpscoutso-itg.corp.hpicloud.net/page/check-engine',
